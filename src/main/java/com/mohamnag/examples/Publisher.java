@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.annotation.Resource;
 import javax.ejb.Schedule;
+import javax.ejb.Singleton;
 import javax.inject.Inject;
 import javax.jms.DeliveryMode;
 import javax.jms.JMSConnectionFactory;
@@ -13,16 +14,17 @@ import javax.jms.Topic;
 import javax.transaction.Transactional;
 import java.time.Instant;
 
+@Singleton
 public class Publisher {
 
-    public static final String COMMON_DOMAIN_EVENTS_TOPIC = "jms/topic/domain-events";
+    public static final String EVENTS_TOPIC = "java:/jms/topic/some-events";
     private static final Logger logger = LoggerFactory.getLogger(Publisher.class);
 
     @Inject
     @JMSConnectionFactory("java:/jms/remote-mq")
     private JMSContext jmsContext;
 
-    @Resource(lookup = COMMON_DOMAIN_EVENTS_TOPIC)
+    @Resource(lookup = EVENTS_TOPIC)
     private Topic topic;
 
     @Transactional
@@ -30,7 +32,7 @@ public class Publisher {
     public void publish() {
 
         String messageBody = "Event on time: '" + Instant.now() + "'";
-        logger.info("publishing event: \"{}\"", messageBody);
+        logger.info("publishing event: \"{}\" to topic \"{}\"", messageBody, EVENTS_TOPIC);
 
         jmsContext
                 .createProducer()
