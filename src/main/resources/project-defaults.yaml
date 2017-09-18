@@ -1,33 +1,33 @@
 
 swarm:
-  logging: DEBUG
-
-  network:
-    socket-binding-groups:
-      standard-sockets:
-        outbound-socket-bindings:
-          remote-activemq:
-            remote-host: localhost
-            remote-port: 61616
-
-  messaging-activemq:
-    servers:
-      default:
-
-        jms-topics:
-          domain-events: {}
-
-        pooled-connection-factories:
-          remote-mq:
-            connectors: remote-activemq
-            entries: java:/jms/remote-mq
-            user: yourUser
-            password: yourPassword
-
-  messaging:
-
-        remote-connectors:
-          remote-activemq:
-            socket-binding: remote-activemq
-
-  remote: true
+#  logging: DEBUG
+#
+#  network:
+#    socket-binding-groups:
+#      standard-sockets:
+#        outbound-socket-bindings:
+#          remote-activemq:
+#            remote-host: localhost
+#            remote-port: 61616
+#
+#  messaging-activemq:
+#    servers:
+#      default:
+#
+#        jms-topics:
+#          some-events: {}
+#
+#        pooled-connection-factories:
+#          remote-mq:
+#            connectors: remote-activemq
+#            entries: java:/jms/remote-mq
+#            user: yourUser
+#            password: yourPassword
+#
+#  messaging:
+#
+#        remote-connectors:
+#          remote-activemq:
+#            socket-binding: remote-activemq
+#
+#  remote: true
