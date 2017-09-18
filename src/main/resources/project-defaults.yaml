@@ -21,7 +21,7 @@ swarm:
           remote-mq:
             connectors: remote-activemq
             entries: java:/jms/remote-mq
-            user: admin
+            user: yourUser
             password: yourPassword
 
   messaging:

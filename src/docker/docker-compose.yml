@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+
+  artemis:
+    image: vromero/activemq-artemis
+    environment:
+      - ARTEMIS_USERNAME=yourUser
+      - ARTEMIS_PASSWORD=yourPassword
+
+    ports:
+      - "8161:8161"
+      - "61616:61616"
+      - "5445:5445"
+      - "5672:5672"
+      - "1883:1883"
+      - "61613:61613"
