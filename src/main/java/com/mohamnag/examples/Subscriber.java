@@ -1,5 +1,6 @@
 package com.mohamnag.examples;
 
+import org.jboss.ejb3.annotation.ResourceAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,11 +11,10 @@ import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.transaction.Transactional;
 
+// name of pooled connection factory, using connectionFactoryLookup does not work!
+// FIXME: 18/09/2017 this is jboss dependent and not standard
+@ResourceAdapter("remote-activemq")
 @MessageDriven(activationConfig = {
-
-        @ActivationConfigProperty(
-                propertyName = "connectionFactoryLookup",
-                propertyValue = "java:/jms/remote-mq"),
 
         @ActivationConfigProperty(
                 propertyName = "destinationLookup",
