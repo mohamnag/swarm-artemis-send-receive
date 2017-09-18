@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swarm-artemis-send-receive.iml" filepath="$PROJECT_DIR$/.idea/modules/swarm-artemis-send-receive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swarm-artemis-send-receive_main.iml" filepath="$PROJECT_DIR$/.idea/modules/swarm-artemis-send-receive_main.iml" group="swarm-artemis-send-receive" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swarm-artemis-send-receive_test.iml" filepath="$PROJECT_DIR$/.idea/modules/swarm-artemis-send-receive_test.iml" group="swarm-artemis-send-receive" />
+    </modules>
+  </component>
+</project>

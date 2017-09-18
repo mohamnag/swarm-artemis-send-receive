@@ -1,0 +1,49 @@
+group 'com.mohamnag.examples'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+ext.swarmVersion = '2017.9.5'
+buildscript {
+    def swarmVersion = '2017.9.5'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.wildfly.swarm:wildfly-swarm-gradle-plugin:$swarmVersion"
+    }
+}
+
+apply plugin: org.wildfly.swarm.plugin.gradle.PackagePlugin
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repository.jboss.org/nexus/content/repositories/thirdparty-releases/'
+    }
+    maven {
+        url 'https://repository.jboss.org/nexus/content/repositories/releases/'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.22'
+
+    // include what swarm needs to run the app
+    compile group: 'org.wildfly.swarm', name: 'logging', version: swarmVersion
+    compile group: 'org.wildfly.swarm', name: 'messaging', version: swarmVersion
+    compile group: 'org.wildfly.swarm', name: 'transactions', version: swarmVersion
+    compile group: 'org.wildfly.swarm', name: 'cdi', version: swarmVersion
+    compile group: 'org.wildfly.swarm', name: 'ejb', version: swarmVersion
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

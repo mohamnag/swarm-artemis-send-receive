@@ -1,0 +1,85 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : com.mohamnag.examples : swarm-artemis-send-receive-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/swarm-artemis-send-receive-1.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/swarm-artemis-send-receive-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="swarm-artemis-send-receive_main/web/Web Gradle : swarm-artemis-send-receive-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="swarm-artemis-send-receive_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.22" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:logging:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:messaging:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:transactions:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:cdi:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:ejb:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:container:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.2.1.Final" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:connector:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:ee:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:jca:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:naming:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:security:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:jgroups:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:undertow:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.jms:jboss-jms-api_2.0_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:meta-spi:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.narayana.jts:narayana-jts-idlj:5.3.3.Final" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:cdi-config:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:bean-validation:2017.9.5" />
+          <element id="library" level="project" name="Gradle: javax.enterprise:cdi-api:1.2" />
+          <element id="library" level="project" name="Gradle: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.ejb3:jboss-ejb3-ext-api:2.2.0.Final" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:spi:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:bootstrap:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:config-api:1.1.0.Final" />
+          <element id="library" level="project" name="Gradle: org.ow2.asm:asm-all:5.0.4" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.resource:jboss-connector-api_1.7_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.enterprise.concurrent:jboss-concurrency-api_1.0_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.2_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.el:jboss-el-api_3.0_spec:1.0.7.Final" />
+          <element id="library" level="project" name="Gradle: org.glassfish:javax.el-impl:3.0.1-b08-jbossorg-1" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:jmx:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:io:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:request-controller:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-jboss:2.0.0" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-impl-jboss:2.0.0" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-javaee:2.0.0" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-impl-javaee:2.0.0" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.servlet:jboss-servlet-api_3.1_spec:1.0.0.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.spec.javax.websocket:jboss-websocket-api_1.1_spec:1.1.1.Final" />
+          <element id="library" level="project" name="Gradle: io.undertow:undertow-servlet:1.2.9.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.openjdk-orb:openjdk-orb:8.0.4.Final" />
+          <element id="library" level="project" name="Gradle: javax.validation:validation-api:1.1.0.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap:shrinkwrap-api:1.2.6" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap:shrinkwrap-impl-base:1.2.6" />
+          <element id="library" level="project" name="Gradle: org.jboss:jandex:2.0.2.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.modules:jboss-modules:1.4.3.Final" />
+          <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.17" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:config-api-runtime:1.1.0.Final" />
+          <element id="library" level="project" name="Gradle: org.wildfly.swarm:remoting:2017.9.5" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:2.0.0" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-impl-base:2.0.0" />
+          <element id="library" level="project" name="Gradle: io.undertow:undertow-core:1.2.9.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap:shrinkwrap-spi:1.2.6" />
+          <element id="library" level="project" name="Gradle: org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:2.0.0" />
+          <element id="library" level="project" name="Gradle: org.jboss.xnio:xnio-api:3.3.1.Final" />
+          <element id="library" level="project" name="Gradle: org.jboss.xnio:xnio-nio:3.3.1.Final" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
