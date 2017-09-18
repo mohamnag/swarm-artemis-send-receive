@@ -22,7 +22,7 @@ public class CustomMain {
                                 connector.socketBinding("remote-activemq");
                             });
 
-                            server.pooledConnectionFactory("remote", factory -> {
+                            server.pooledConnectionFactory("remote-activemq", factory -> {
                                 factory.connectors("remote-activemq");
                                 factory.entries("java:/jms/remote-mq");
                                 factory.user("yourUser");
